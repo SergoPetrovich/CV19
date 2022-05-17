@@ -7,23 +7,15 @@ using CV19.ViewModels.Base;
 
 namespace CV19.ViewModels
 {
-    internal class MainWindowViewModel : ViewModel
+    internal class MainWindowViewModel:ViewModel
     {
-        #region Заголовок окна
-        private string _Title = "Анализ статистики CV19";
-        /// <summary>Заголовок окна</summary>
-
+        private string _Title="Анализ статистики CV19";
         public string Title
         {
+            //get { return _Title; }
+            //set { _Title = value; }
             get => _Title;
-            //set
-            //{
-            //    if (Equals(_Title, value)) return;
-            //    _Title = value;
-            //    OnPropertyChanged();
-            //}
-            set => Set(ref _Title, value);
+            set=>Set(ref _Title, value);
         }
-        #endregion
     }
 }
