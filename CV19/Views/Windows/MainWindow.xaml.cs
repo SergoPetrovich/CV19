@@ -26,4 +26,3 @@ namespace CV19
         }
     }
 }
-Windo
